@@ -13,7 +13,7 @@ body {
 
 /*'Agymanok' cim*/
 h1 {
-    font-size: 60px;
+    font-size: 45px;
     position: absolute;
     top:10px;
     left: 10px;
@@ -21,9 +21,9 @@ h1 {
 
 /*'Regisztralj' cim*/
 h2{
-    font-size: 100px;
+    font-size: 70px;
     text-align: center;
-    transform: translateY(-50px);
+    transform: translateY(-20px);
 }
 
 .hidden {
@@ -40,7 +40,7 @@ input[type="class"],
 input[type="date"] {
     font-size: 20px;
     display: block;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 10px;
     width: 90%;
 }
@@ -48,12 +48,11 @@ input[type="date"] {
 /*'regisztracio' gomb megjelenitese*/
 button {
     padding: 10px 50px;
-    margin-top: 20px;
     font-size: 30px;
     color: #fff;
     background-color: #247ac0;
     border: none;
-    border-radius: 200px;
+    border-radius: 5px;
     cursor: pointer;
     text-align: center;
     transform: translateY(100px);
@@ -67,18 +66,37 @@ button:hover {
 /*'tanar-diak' szoveg stilusa*/
 .form-group {
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
     top: -100px;
 }
 
 /*radiogombok*/
 input[type="radio"] {
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
 }
 
 /*pipa ablak 'elfogadom a ...'*/
 input[type="checkbox"]{
-    width: 23px;
-    height: 23px;
+    width: 20px;
+    height: 20px;
+}
+
+input[type="checkbox1"]{
+    width: 5px;
+    height: 5px;
+}
+
+input[type="checkbox"]:disabled + label {
+    color: gray;
+}
+
+input[type="checkbox"]:checked + label {
+    color: green;
+}
+
+.error-message {
+    margin-top: 4px;
+    font-size: 12px;
+    color: red;
 }

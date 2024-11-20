@@ -8,38 +8,72 @@
 </head>
 <body>
 <div class="container">
-    <h1>Agymanok  </h1>
+    <h1>Agymanók</h1>
     <h2>Regisztrálj!</h2>
-    <label class="form-group">
+    <div>
         <input type="radio" name="role" value="teacher" onclick="toggleFields()"> Tanár
         <input type="radio" name="role" value="student" onclick="toggleFields()"> Diák
-        <br>
-        <div id="studentFields" class="hidden">
-            <input type="firstname" placeholder="Vezetéknév">
-            <input type="lastname" placeholder="Keresztnév">
-            <input type="username" placeholder="Felhasználónév">
-            <input type="email" placeholder="Email cím">
-            <input type="password" placeholder="Jelszó">
-            <input type="tel" placeholder="Telefonszám">
-            <input type="class" placeholder="Osztály">
-        </div>
-        <div id="teacherFields" class="hidden">
-            <input type="firstname" placeholder="Vezetéknév">
-            <input type="lastname" placeholder="Keresztnév">
-            <input type="username" placeholder="Felhasználónév">
-            <input type="email" placeholder="Email cím">
-            <input type="password" placeholder="Jelszó">
-            <input type="tel" placeholder="Telefonszám">
-            <input type="date" placeholder="Születési dátum">
-        </div>
+    </div>
+    <br>
 
+    <!-- Diák mezők -->
+    <div id="studentFields" class="hidden">
+        <input id="firstName" type="text" placeholder="Vezetéknév">
+        <input id="lastName" type="text" placeholder="Keresztnév">
+        <input id="userName" type="text" placeholder="Felhasználónév">
+        <small class="error-message"></small>
+        <input id="email" type="email" placeholder="Email cím">
+        <small class="error-message"></small>
+        <input id="password" type="password" placeholder="Jelszó" oninput="validatePassword('Student')">
+        <small class="error-message"></small>
+        <div id="passwordRequirementsStudent">
+            <small>
+                <label><input type="checkbox" id="lowercaseStudent" disabled> Kisbetű</label><br>
+                <label><input type="checkbox" id="uppercaseStudent" disabled> Nagybetű</label><br>
+                <label><input type="checkbox" id="numberStudent" disabled> Szám</label><br>
+                <label><input type="checkbox" id="specialCharStudent" disabled> Speciális karakter</label>
+            </small>
+        </div>
+        <input id="phone" type="tel" placeholder="Telefonszám">
+        <small class="error-message"></small>
+        <input id="class" type="text" placeholder="Osztály">
+        <small class="error-message"></small>
+    </div>
+
+    <!-- Tanár mezők -->
+    <div id="teacherFields" class="hidden">
+        <input id="firstNameT" type="text" placeholder="Vezetéknév">
+        <input id="lastNameT" type="text" placeholder="Keresztnév">
+        <input id="userNameT" type="text" placeholder="Felhasználónév">
+        <small class="error-message"></small>
+        <input id="emailT" type="email" placeholder="Email cím">
+        <small class="error-message"></small>
+        <input id="passwordT" type="password" placeholder="Jelszó" oninput="validatePassword('Teacher')">
+        <small class="error-message"></small>
+        <div id="passwordRequirementsTeacher">
+            <small>
+                <label><input type="checkbox" id="lowercaseTeacher" disabled> Kisbetű</label><br>
+                <label><input type="checkbox" id="uppercaseTeacher" disabled> Nagybetű</label><br>
+                <label><input type="checkbox" id="numberTeacher" disabled> Szám</label><br>
+                <label><input type="checkbox" id="specialCharTeacher" disabled> Speciális karakter</label>
+            </small>
+        </div>
+        <input id="phoneT" type="tel" placeholder="Telefonszám">
+        <small class="error-message"></small>
+        <input id="birthDate" type="date" placeholder="Születési dátum">
+        <small class="error-message"></small>
+    </div>
+
+    <div>
         <label>
-            <input type="checkbox" required> Elfogadom a felhasználói feltételeket
+            <input type="checkbox" id="terms"> Elfogadom a felhasználói feltételeket
         </label>
-        <br>
-    </label>
-    <button>Regisztráció</button>
+    </div>
+    <br>
+    <button id="registerBtn" disabled>Regisztráció</button>
 </div>
+
 <script src="script.js"></script>
 </body>
 </html>
+
