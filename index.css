@@ -1,0 +1,48 @@
+/*hatter beallitasai*/
+body {
+    font-family: "Lucida Console", monaco, monospace; /*betutipus*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("2384075.jpg");
+    background-size: cover; /* A kép kitölti az egész képernyőt */
+    background-position: center; /* Kép középre igazítása */
+}
+
+/*'Agymanok' cim*/
+h1 {
+    color: #000000;
+    font-size: 200px;
+    text-align: center;
+    transform: translateY(-70px);
+}
+
+/*'a legjobb kziv, amit valaha lattal' cim*/
+h2{
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+    transform: translateY(-200px);
+}
+
+/*'bejelentkezes','Regisztracio' gomb megjelenitese*/
+button {
+    padding: 30px 50px;
+    margin-top: 20px;
+    font-size: 26px;
+    color: #fff;
+    background-color: #247ac0;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    text-align: center;
+    transform: translateY(15px);
+    transform: translateX(250px);
+}
+
+/*gomb feletti hatter valtozik*/
+button:hover {
+    background-color: #000853;
+}

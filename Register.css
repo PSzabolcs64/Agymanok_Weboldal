@@ -1,0 +1,84 @@
+/*hatter beallitasai*/
+body {
+    font-family: "Lucida Console,monaco, monospace";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100dvh;
+    margin: 0px;
+    background-image: url("2384075.jpg");
+    background-size: cover; /* A kép kitölti az egész képernyőt */
+    background-position: center; /* Kép középre igazítása */
+}
+
+/*'Agymanok' cim*/
+h1 {
+    font-size: 60px;
+    position: absolute;
+    top:10px;
+    left: 10px;
+}
+
+/*'Regisztralj' cim*/
+h2{
+    font-size: 100px;
+    text-align: center;
+    transform: translateY(-50px);
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="firstname"],
+input[type="lastname"],
+input[type="username"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="class"],
+input[type="date"] {
+    font-size: 20px;
+    display: block;
+    margin-top: 5px;
+    padding: 10px;
+    width: 90%;
+}
+
+/*'regisztracio' gomb megjelenitese*/
+button {
+    padding: 10px 50px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #247ac0;
+    border: none;
+    border-radius: 200px;
+    cursor: pointer;
+    text-align: center;
+    transform: translateY(100px);
+}
+
+/*gomb feletti hatter valtozik*/
+button:hover {
+    background-color: #000853;
+}
+
+/*'tanar-diak' szoveg stilusa*/
+.form-group {
+    margin-top: 10px;
+    font-size: 25px;
+    top: -100px;
+}
+
+/*radiogombok*/
+input[type="radio"] {
+    width: 23px;
+    height: 23px;
+}
+
+/*pipa ablak 'elfogadom a ...'*/
+input[type="checkbox"]{
+    width: 23px;
+    height: 23px;
+}

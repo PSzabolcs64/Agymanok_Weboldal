@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+<div class="container">
+    <h1>Agymanok  </h1>
+    <h2>Regisztrálj!</h2>
+    <label class="form-group">
+        <input type="radio" name="role" value="teacher" onclick="toggleFields()"> Tanár
+        <input type="radio" name="role" value="student" onclick="toggleFields()"> Diák
+        <br>
+        <div id="studentFields" class="hidden">
+            <input type="firstname" placeholder="Vezetéknév">
+            <input type="lastname" placeholder="Keresztnév">
+            <input type="username" placeholder="Felhasználónév">
+            <input type="email" placeholder="Email cím">
+            <input type="password" placeholder="Jelszó">
+            <input type="tel" placeholder="Telefonszám">
+            <input type="class" placeholder="Osztály">
+        </div>
+        <div id="teacherFields" class="hidden">
+            <input type="firstname" placeholder="Vezetéknév">
+            <input type="lastname" placeholder="Keresztnév">
+            <input type="username" placeholder="Felhasználónév">
+            <input type="email" placeholder="Email cím">
+            <input type="password" placeholder="Jelszó">
+            <input type="tel" placeholder="Telefonszám">
+            <input type="date" placeholder="Születési dátum">
+        </div>
+
+        <label>
+            <input type="checkbox" required> Elfogadom a felhasználói feltételeket
+        </label>
+        <br>
+    </label>
+    <button>Regisztráció</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
