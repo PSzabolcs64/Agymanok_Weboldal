@@ -1,0 +1,96 @@
+body {
+    font-family: "Lucida Console,monaco, monospace";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100dvh;
+    margin: 0px;
+    background-image: url("../../public/2384075.jpg");
+    background-size: cover; /* A kép kitölti az egész képernyőt */
+    background-position: center; /* Kép középre igazítása */
+
+    padding: 0;
+
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 90px;
+    text-align: center;
+    transform: translateY(-50px);
+}
+
+label {
+    display: block;
+    font-size: 30px;
+    margin-top: 15px;
+    color: #333;
+}
+
+select,
+input[type="text"],
+input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 80%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 50px;
+    margin-bottom: 15px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.question-block {
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; /* Biztosítja, hogy minden blokk teljes szélességben jelenjen meg */
+    box-sizing: border-box;
+}
+
+.question-block h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.answer-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.answer-group input {
+    margin-top: 8px;
+}
