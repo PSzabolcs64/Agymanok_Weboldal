@@ -1,0 +1,89 @@
+body {
+    font-family: "Lucida Console,monaco, monospace";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100dvh;
+    margin: 0px;
+    background-image: url("../../public/2384075.jpg");
+    background-size: cover; /* A kép kitölti az egész képernyőt */
+    background-position: center; /* Kép középre igazítása */
+}
+
+h1 {
+    font-size: 45px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+h2{
+    font-size: 70px;
+    text-align: center;
+    transform: translateY(-50px);
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.test-button {
+    display: block;
+    width: 400px;
+    padding: 30px 50px;
+    margin: 30px auto;
+    font-size: 30px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.test-button:hover {
+    background-color: #0056b3;
+}
+
+.code-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    font-size: 40px;
+    color: #333;
+    margin-right: 10px; /* A szöveg és az input mező közötti távolság */
+}
+
+input {
+    padding: 15px;
+    font-size: 25px;
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    padding: 20px 35px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
