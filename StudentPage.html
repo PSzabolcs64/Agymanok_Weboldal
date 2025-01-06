@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Válaszd ki a teszt típusát</title>
+    <link rel="stylesheet" href="../../styles/Student/StudentPage.css">
+</head>
+<body>
+<div class="container">
+    <h1>Agymanók</h1>
+    <h2>Milyen típusú teszten szeretnél részt venni?</h2>
+    <div class="buttons">
+        <button class="test-button" onclick="openCodeInput('felmero')">Felmérő</button>
+        <button class="test-button" onclick="openCodeInput('gyakorlo')">Gyakorló</button>
+        <button class="test-button" onclick="openCodeInput('pontszerzo')">Pontszerző</button>
+    </div>
+    <div class="code-input hidden" id="codeInput">
+        <label for="testCode" class="code-label">Add meg a teszt kódját:</label>
+        <input type="text" id="testCode" placeholder="Teszt kód">
+        <button class="submit-button" onclick="goToTest()">Tovább</button>
+    </div>
+</div>
+
+<script>
+    let selectedTestType = '';
+
+    function openCodeInput(testType) {
+        selectedTestType = testType;
+        document.getElementById('codeInput').classList.remove('hidden');
+    }
+
+    function goToTest() {
+        const testCode = document.getElementById('testCode').value.trim();
+        if (!testCode) {
+            alert('Kérlek, add meg a teszt kódját!');
+            return;
+        }
+
+        // Navigáció a megfelelő teszt oldalra
+        if (selectedTestType === 'felmero') {
+            window.location.href = `/AssessmentTest.html?code=${testCode}`;
+        } else if (selectedTestType === 'gyakorlo') {
+            window.location.href = `/PracticeTest.html?code=${testCode}`;
+        } else if (selectedTestType === 'pontszerzo') {
+            window.location.href = `/ScoringTest.html?code=${testCode}`;
+        }
+    }
+</script>
+</body>
+</html>
