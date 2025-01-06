@@ -7,7 +7,7 @@ body {
     align-items: center;
     height:100dvh;
     margin: 0px;
-    background-image: url("2384075.jpg");
+    background-image: png("2384075.jpg");
     background-size: cover; /* A kép kitölti az egész képernyőt */
     background-position: center; /* Kép középre igazítása */
     
