@@ -1,5 +1,7 @@
 body {
-    font-family: "Lucida Console,monaco, monospace";
+
+
+ font-family: "Lucida Console,monaco, monospace";
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +10,7 @@ body {
     background-image: url("2384075.jpg");
     background-size: cover; /* A kép kitölti az egész képernyőt */
     background-position: center; /* Kép középre igazítása */
-
+    
     padding: 0;
 
     min-height: 100vh;
